@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:scrollbars="vertical"
+
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:text="Enter Vehicle and Personal Details"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nhailogo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_directions_car_black_24dp"
+        android:text="Enter Vehicle"
+        android:layout_margin="16dp"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed1"
+        android:layout_margin="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:hint="      Enter Vehicle Model here"
+        android:textColor="#fff"
+        android:textColorHint="#999"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawableLeft="@drawable/ic_color_lens_black_24dp"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:text="Enter Vehicle Color"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/ed2"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:hint="      Enter Color"
+        android:textColor="#fff"
+        android:textColorHint="#999"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_text_fields_black_24dp"
+        android:text="Enter Number Plate"
+        android:textColor="#fff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/ed3"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:hint="      eg: RJ 14 DR 5221"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:textColorHint="#999"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="  Select Vehicle Type"
+        android:textColor="#fff"
+        android:layout_margin="16dp"
+        android:textSize="14sp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:id="@+id/vehicleTypeSpinner"
+
+        android:entries="@array/Vehicle_Type"
+        android:background="@color/colorAccent"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textAlignment="center"
+
+        android:layout_height="wrap_content">
+
+    </Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_my_location_black_24dp"
+        android:text="Start Point"
+        android:layout_margin="16dp"
+        android:textColor="#fff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/ed4"
+        android:layout_marginRight="16dp"
+        android:gravity="center"
+
+        android:hint="      eg: Current Location"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:textColorHint="#999"
+        android:textSize="14sp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:drawableLeft="@drawable/ic_edit_location_black_24dp"
+        android:text="End Point"
+        android:textColor="#fff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/ed5"
+        android:layout_marginRight="16dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+
+        android:hint="      eg: Hyderabad"
+        android:textColor="#fff"
+        android:textColorHint="#999"
+        android:textSize="14sp" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/roundTripCheckbox"
+        android:textColor="#aaa"
+
+        android:background="@color/colorAccent"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Round Trip"
+        android:textSize="14sp"
+        />
+    <Button
+        android:id="@+id/submit_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+
+        android:layout_marginRight="16dp"
+        android:background="#fff"
+        android:text="Submit Details"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/showBoothsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#fff"
+        android:onClick="hello"
+        android:layout_margin="16dp"
+        android:text="Show Booths"
+        android:textColor="#000" />
+</LinearLayout>
+
+</ScrollView>

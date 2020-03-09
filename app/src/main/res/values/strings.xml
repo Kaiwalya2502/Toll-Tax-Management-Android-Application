@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Toll Tax</string>
+    <string name="title_activity_maps">Map</string>
+    <string-array name="Vehicle_Type">
+        <item name="Select Vehicle Type">Select Vehicle Type</item>
+        <item name="Personal">Personal</item>
+        <item name="Commercial">Commercial</item>
+        <item name="Heavy Duty">Heavy Duty</item>
+        <item name="Taxi">Taxi</item>
+    </string-array>
+    <string-array name="Payment_Mode">
+        <item name="Select Payment Method">Select Payment Method</item>
+        <item name="Credit Card">Credit Card</item>
+        <item name="Debit Card">Debit Card</item>
+        <item name="UPI">Upi</item>
+        <item name="Net Banking">Net Banking</item>
+    </string-array>
+</resources>

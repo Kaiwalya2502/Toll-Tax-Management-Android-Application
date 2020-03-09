@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#000"
+    android:orientation="vertical"
+    tools:context=".ReceiptActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_margin="16dp"
+        android:background="#fff">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Receipt"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:textColor="#000" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/activity_receipt_id_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="12345"
+        android:gravity="center"
+        android:background="@color/colorAccent"
+        android:layout_margin="16dp"
+        android:textColorHint="#fff"
+        android:padding="8dp"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/activity_receipt_charges_text_view"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:padding="8dp"
+        android:hint="100.00/-"
+        android:layout_margin="16dp"
+        android:textColorHint="#fff"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/activity_receipt_name_text_view"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:hint="John Doe"
+        android:padding="8dp"
+        android:layout_margin="16dp"
+        android:textColorHint="#fff"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/activity_receipt_number_plate_text_view"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:hint="John Doe"
+        android:padding="8dp"
+        android:layout_margin="16dp"
+        android:textColorHint="#fff"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/activity_receipt_payment_text_view"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:hint="Credit Card"
+        android:padding="8dp"
+        android:textColorHint="#fff"
+        android:layout_margin="16dp"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:background="#fff"
+        android:padding="8dp"
+        android:src="@drawable/qrcode_toll_tax"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ShowRoute"
+        android:background="#fff"
+        android:text="Show Route"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:textColor="#000"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>
+</ScrollView>

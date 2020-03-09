@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Enter Details"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#fff"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:id="@+id/PaymentMethodSpinner"
+        android:layout_marginTop="40dp"
+        android:entries="@array/Payment_Mode"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:padding="8dp"
+        android:layout_marginRight="8dp"
+
+        android:textAlignment="center"
+
+        android:layout_height="wrap_content">
+    </Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Charges:"
+        android:layout_margin="16dp"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:padding="8dp"
+
+        android:id="@+id/tripChargesInPaymentGateway"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:padding="8dp"
+        android:layout_margin="16dp"
+        android:id="@+id/paymentMadeBy"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#fff"
+        android:text="Generate Receipt"
+        android:textColor="#000"
+        android:padding="16dp"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/button"
+        />
+</LinearLayout>
